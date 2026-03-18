@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Plus, Image, FolderOpen, Palette, Sparkles, Link2, BarChart3 } from 'lucide-react';
+import { Plus, Image, FolderOpen, Palette, Sparkles, Link2, BarChart3, BookOpen, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 const quickActions = [
@@ -39,6 +39,13 @@ const quickActions = [
     label: 'Analytics', 
     desc: 'Track performance',
     color: 'bg-lime-500' 
+  },
+  { 
+    href: '/guide', 
+    icon: BookOpen, 
+    label: 'How to Use', 
+    desc: 'Step-by-step guide',
+    color: 'bg-purple-500' 
   },
 ];
 

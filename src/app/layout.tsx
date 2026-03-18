@@ -2,11 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Plus, Image, Palette, Link2, BarChart3, Search } from 'lucide-react';
+import { Home, Plus, Image, Palette, Link2, BarChart3, Search, BookOpen } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navItems = [
   { href: '/', icon: Home, label: 'Dashboard' },
+  { href: '/guide', icon: BookOpen, label: 'Guide' },
   { href: '/create', icon: Plus, label: 'Create Pin' },
   { href: '/products', icon: Search, label: 'Products' },
   { href: '/affiliates', icon: Link2, label: 'Affiliates' },
