@@ -1,10 +1,10 @@
-# Beach Affiliate Studio - Specification
+# Lasthire.ai - Specification
 
 ## Project Overview
-- **Name:** Beach Affiliate Studio
+- **Name:** Lasthire.ai
 - **Type:** Web Application (Next.js)
-- **Purpose:** Create social media content + manage affiliate links for beach/tropical niche
-- **Vibe:** Florida Caribbean - tropical, refreshing, energetic
+- **Purpose:** Pinterest affiliate marketing tool - research, create content, track performance
+- **Vibe:** Professional, clean, high-converting
 
 ## Tech Stack
 - Next.js 15 (App Router)

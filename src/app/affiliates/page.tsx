@@ -5,10 +5,12 @@ import { motion } from 'framer-motion';
 import { Plus, Link2, ExternalLink, Copy, Trash2, Check, Edit, DollarSign } from 'lucide-react';
 
 const sampleAffiliates = [
-  { id: 1, name: 'Beach Soul USA Towels', url: 'https://beachsoul.co/...', commission: '10%', network: 'Shopify Collabs', status: 'pending' },
-  { id: 2, name: 'Sand Cloud Towels', url: 'https://sandcloud.com/...', commission: '10%', network: 'CJ Affiliate', status: 'active' },
-  { id: 3, name: 'HomeWetBar Glassware', url: 'https://homewetbar.com/...', commission: '12%', network: 'ShareASale', status: 'active' },
-  { id: 4, name: 'Klean Kanteen Bottle', url: 'https://kleankanteen.com/...', commission: '10%', network: 'AvantLink', status: 'pending' },
+  { id: 1, name: 'Wayfair Home Decor', url: 'https://wayfair.com/...', commission: '7%', network: 'Wayfair', status: 'pending' },
+  { id: 2, name: 'One Kings Lane', url: 'https://onekingslane.com/...', commission: '12%', network: 'Direct', status: 'pending' },
+  { id: 3, name: 'Amazon Associates', url: 'https://amazon.com/...', commission: '1-10%', network: 'Amazon', status: 'active' },
+  { id: 4, name: 'Burrow Furniture', url: 'https://burrow.com/...', commission: '10%', network: 'Direct', status: 'pending' },
+  { id: 5, name: 'Designer Living', url: 'https://designerliving.com/...', commission: '12%', network: 'Direct', status: 'pending' },
+  { id: 6, name: 'LTK', url: 'https://shopltk.com/...', commission: 'varies', network: 'LTK', status: 'pending' },
 ];
 
 const networks = ['All', 'Shopify Collabs', 'ShareASale', 'Rakuten', 'CJ Affiliate', 'Impact', 'Direct'];

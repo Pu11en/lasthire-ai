@@ -1,44 +1,44 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Plus, Image, FolderOpen, Palette, Sparkles, Link2 } from 'lucide-react';
+import { Plus, Image, FolderOpen, Palette, Sparkles, Link2, BarChart3 } from 'lucide-react';
 import Link from 'next/link';
 
 const quickActions = [
   { 
     href: '/create', 
     icon: Plus, 
-    label: 'Create New', 
-    desc: 'Generate a new creative',
-    color: 'bg-lime-500' 
+    label: 'Create Pin', 
+    desc: 'Design a new pin',
+    color: 'bg-purple-500' 
   },
   { 
     href: '/affiliates', 
     icon: Link2, 
     label: 'Affiliates', 
-    desc: 'Manage your links',
-    color: 'bg-green-500' 
+    desc: 'Manage links',
+    color: 'bg-pink-500' 
+  },
+  { 
+    href: '/products', 
+    icon: Sparkles, 
+    label: 'Products', 
+    desc: 'Research & track',
+    color: 'bg-purple-500' 
   },
   { 
     href: '/templates', 
     icon: Image, 
-    label: 'Browse Templates', 
-    desc: 'Pick a pre-made design',
+    label: 'Templates', 
+    desc: 'Pin templates',
     color: 'bg-turquoise-500' 
   },
   { 
-    href: '/assets', 
-    icon: FolderOpen, 
-    label: 'Manage Assets', 
-    desc: 'Upload & organize files',
-    color: 'bg-orange-500' 
-  },
-  { 
-    href: '/brand', 
-    icon: Palette, 
-    label: 'Brand Settings', 
-    desc: 'Colors, logos & more',
-    color: 'bg-pink-500' 
+    href: '/analytics', 
+    icon: BarChart3, 
+    label: 'Analytics', 
+    desc: 'Track performance',
+    color: 'bg-lime-500' 
   },
 ];
 
@@ -58,10 +58,10 @@ export default function HomePage() {
         className="text-center py-8"
       >
         <h2 className="text-4xl font-bold mb-2">
-          Welcome to <span className="text-lime-600">Beach Affiliate</span> 🌴
+          Welcome to <span className="text-purple-600">Lasthire.ai</span> ⚡
         </h2>
         <p className="text-gray-600 text-lg">
-          Create content + manage affiliate links for that beach bag 💰
+          Pinterest affiliate marketing on autopilot 🚀
         </p>
       </motion.div>
 

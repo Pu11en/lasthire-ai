@@ -2,16 +2,16 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Plus, Image, FolderOpen, Palette, Link2 } from 'lucide-react';
+import { Home, Plus, Image, Palette, Link2, BarChart3, Search } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const navItems = [
   { href: '/', icon: Home, label: 'Dashboard' },
-  { href: '/create', icon: Plus, label: 'Create' },
+  { href: '/create', icon: Plus, label: 'Create Pin' },
+  { href: '/products', icon: Search, label: 'Products' },
   { href: '/affiliates', icon: Link2, label: 'Affiliates' },
   { href: '/templates', icon: Image, label: 'Templates' },
-  { href: '/assets', icon: FolderOpen, label: 'Assets' },
-  { href: '/brand', icon: Palette, label: 'Brand' },
+  { href: '/analytics', icon: BarChart3, label: 'Analytics' },
 ];
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -24,10 +24,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {/* Sidebar */}
           <aside className="w-64 bg-white/80 backdrop-blur-sm border-r border-lime-100 p-4 flex flex-col">
             <div className="mb-8">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-lime-500 to-turquoise-500 bg-clip-text text-transparent">
-                Beach Affiliate
+              <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Lasthire.ai
               </h1>
-              <p className="text-xs text-gray-500">Make that money 🌴</p>
+              <p className="text-xs text-gray-500">Pinterest Affiliate Machine</p>
             </div>
             
             <nav className="flex-1 space-y-2">
