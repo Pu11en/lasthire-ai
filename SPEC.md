@@ -1,120 +1,239 @@
-# Lasthire.ai - Specification
+# Lasthire.ai - Affiliate Automation Platform
 
 ## Project Overview
-- **Name:** Lasthire.ai
-- **Type:** Web Application (Next.js)
-- **Purpose:** Pinterest affiliate marketing tool - research, create content, track performance
-- **Vibe:** Professional, clean, high-converting
+
+**Name:** Lasthire.ai  
+**Purpose:** Automated affiliate marketing platform for businesses and brands  
+**Core Functionality:** Research products, create content, manage affiliate links, track performance, automate posting to Pinterest  
+**Target Users:** Content creators, marketers, brands wanting to do affiliate marketing
+
+---
+
+## Conversation Summary (What We Built)
+
+### Phase 1: Island Splash (Initial Idea)
+- Started as a beverage brand creative tool
+- Pivot needed: focus on affiliate marketing instead
+
+### Phase 2: Beach Affiliate Studio
+- Added affiliate link management
+- Beach/tropical niche
+- Researched beach affiliate programs
+
+### Phase 3: Home Decor Pivot (Manus Research)
+- Home Decor is #1 niche for Pinterest (high engagement, high AOV)
+- Programs: Wayfair (7%), Amazon (1-10%), LTK, One Kings Lane (12%), etc.
+- Strategy: High-ticket items = big commissions
+
+### Phase 4: Lasthire.ai
+- Complete web app with:
+  - Dashboard
+  - Create Pins
+  - Products (research high-ticket items)
+  - Affiliates (manage links)
+  - Templates
+  - Analytics
+  - Guide (how-to-use)
+- The Library (skills system for automation)
+- Deployed to Vercel: https://lasthire-ai.vercel.app
+- GitHub: https://github.com/Pu11en/lasthire-ai
+
+### Phase 5: Manual First Strategy
+- Test manually first, then automate
+- 7-day sprint plan
+- Apply to programs → Create pins → Post → Track → Automate
+
+---
+
+## Key Learnings from Conversation
+
+### What Works for Pinterest Affiliate
+1. **Niche:** Home Decor (highest earning potential)
+2. **Products:** High-ticket ($300+) = real money
+3. **Content:** Pinterest is a SEARCH ENGINE (SEO approach)
+4. **Strategy:** Links go to landing page, not directly in pins
+5. **Volume:** 10-15 pins/day minimum
+
+### Top Affiliate Programs
+| Program | Commission | Cookie |
+|---------|-----------|--------|
+| Amazon Associates | 1-10% | 24hr |
+| Wayfair | 7% | 14 days |
+| LTK | varies | 30 days |
+| One Kings Lane | 12% | 30 days |
+| Designer Living | 12% | 30 days |
+| Burrow | 10% | 30 days |
+
+### Mistakes to Avoid
+- Direct affiliate links in pins (shadowban)
+- Promoting cheap products (low commissions)
+- No landing page/email list
+- Posting infrequently
+
+---
+
+## Agent Automation Spec
+
+### Core Agents Needed
+
+#### 1. Research Agent
+**Purpose:** Find high-ticket products to promote
+
+**Capabilities:**
+- Search affiliate networks for trending products
+- Filter by price ($200+), commission (7%+), saves on Pinterest
+- Analyze competitor listings
+- Identify trending keywords
+
+**Commands:**
+- "Find me [niche] products over $300"
+- "What's trending for [keyword]?"
+- "Analyze competitor @username"
+
+---
+
+#### 2. Content Agent
+**Purpose:** Generate pin ideas and descriptions
+
+**Capabilities:**
+- Generate pin titles (SEO-optimized)
+- Write descriptions with keywords
+- Create captions for Pinterest
+- Suggest board names
+
+**Pin Formulas That Work:**
+1. "[Product] Under $[Price]"
+2. "[Room] Makeover on a Budget"
+3. "[Problem]? Here's What Works"
+4. "[Number] [Items] That Transform Your [Room]"
+5. "[Room] Before and After"
+
+**Keywords That Convert:**
+- "Under $X" (budget)
+- "DIY" (improvement)
+- "Minimalist" (aesthetic)
+- "On a Budget" (price-sensitive)
+- "Ideas" (planning)
+- "Makeover" (transformation)
+
+**Commands:**
+- "Give me 10 pin ideas for [product]"
+- "Write description for [product]"
+- "Generate captions for [niche]"
+
+---
+
+#### 3. Affiliate Manager Agent
+**Purpose:** Manage affiliate programs and links
+
+**Capabilities:**
+- Apply to affiliate programs automatically
+- Track application status
+- Manage affiliate links
+- Monitor earnings
+
+**Commands:**
+- "Apply to [program]"
+- "Check status of [program]"
+- "Add affiliate link [URL]"
+- "List all my affiliate programs"
+
+---
+
+#### 4. Analytics Agent
+**Purpose:** Track and optimize performance
+
+**Capabilities:**
+- Monitor clicks, saves, earnings
+- Identify top-performing pins
+- Generate reports
+- Recommend optimizations
+
+**Metrics That Matter:**
+- Clicks (direct traffic)
+- Saves (intent to buy)
+- Repins (organic reach)
+- Earnings (money)
+- CTR (conversion)
+
+**Commands:**
+- "How did my pins do this week?"
+- "Which pins are converting best?"
+- "Give me a performance report"
+
+---
+
+#### 5. Posting Agent
+**Purpose:** Automate pinning to Pinterest
+
+**Capabilities:**
+- Schedule pins
+- Post to multiple boards
+- Rotate content
+- Optimize timing
+
+**Commands:**
+- "Schedule 20 pins for [niche]"
+- "Post to [board1], [board2]"
+- "Best time to post?"
+
+---
 
 ## Tech Stack
-- Next.js 15 (App Router)
+
+### Frontend
+- Next.js 15
 - TypeScript
 - Tailwind CSS
-- Framer Motion (animations)
-- Lucide React (icons)
+- Framer Motion
 
-## Color Palette
-- **Primary:** Lime Green (#32CD32 / #84CC16)
-- **Secondary:** Ocean Turquoise (#14B8A6)
-- **Accent:** Sunset Orange (#F97316)
-- **Background:** Cream White (#FFFBF5)
-- **Text:** Charcoal (#1F2937)
+### Backend (Future)
+- Database (PostgreSQL/Supabase)
+- Authentication
+- Pinterest API integration
+- Affiliate network APIs
 
-## Core Features
+### Deployment
+- Vercel
 
-### 1. Brand Manager
-- Upload brand logo
-- Set brand colors (primary, secondary, accent)
-- Save product images
-- Brand profile management
+---
 
-### 2. Creative Generator
-- Text-to-image prompt input
-- Reference image upload
-- Style templates (Tropical, Minimal, Bold, Party)
-- Platform selection (Instagram, TikTok, Facebook)
-- Aspect ratio (9:16, 1:1, 16:9)
+## Implementation Priority
 
-### 3. Template Library
-- Pre-made layouts for social media
-- Editable text overlays
-- Background templates
-- Platform-specific sizes
+### Phase 1 (Manual → Automation)
+1. ✅ Web app with guide
+2. ⏳ Research agent
+3. ⏳ Content agent
+4. ⏳ Affiliate manager
 
-### 4. Asset Library
-- Upload product shots
-- Store logos
-- Background image library
-- Organize by category
+### Phase 2 (Automation)
+5. ⏳ Analytics agent
+6. ⏳ Posting agent
+7. ⏳ Full automation
 
-### 5. Export
-- Download as PNG, JPG
-- Copy to clipboard
-- Direct social media sharing
+---
 
-## Pages Structure
+## Success Metrics
 
-### `/` - Dashboard
-- Quick actions (Create New, Browse Templates, Manage Assets)
-- Recent projects
-- Brand overview
+| Metric | Target (Month 1) | Target (Month 3) |
+|--------|-----------------|-------------------|
+| Affiliate Programs | 3 approved | 10+ |
+| Products Promoted | 20 | 100+ |
+| Pins Created | 500 | 2000+ |
+| Pinterest Followers | 100 | 1000+ |
+| Clicks | 1000 | 10000+ |
+| Earnings | $100 | $1000+ |
 
-### `/create` - Creative Generator
-- Prompt input
-- Reference image upload
-- Style/Platform selection
-- Generate button
-- Preview area
+---
 
-### `/templates` - Template Library
-- Grid of templates
-- Filter by platform/type
-- Preview and use
+## Notes
 
-### `/assets` - Asset Library
-- Upload interface
-- Gallery view
-- Organize/manage assets
+- Always test manually before automating
+- Focus on high-ticket items
+- Pinterest = search engine, not social media
+- Build email list for long-term success
+- The ceiling is in combining Pinterest → Blog → Email → Repeat
 
-### `/brand` - Brand Manager
-- Logo upload
-- Color configuration
-- Product images
+---
 
-## UI Components
-
-### Navigation
-- Sidebar with icons
-- Active state indicator
-- Smooth transitions
-
-### Cards
-- Rounded corners (12px)
-- Subtle shadows
-- Hover effects
-
-### Buttons
-- Primary: Lime green
-- Secondary: Outline
-- Rounded (8px)
-
-### Inputs
-- Rounded (8px)
-- Focus ring
-- Clear labels
-
-## Animations (Framer Motion)
-- Page transitions (fade + slide)
-- Card hover (scale + shadow)
-- Button press (scale)
-- Modal open (fade + scale)
-- Staggered list reveals
-
-## Acceptance Criteria
-1. App builds without errors
-2. All pages render correctly
-3. Navigation works between all pages
-4. Responsive on mobile/tablet/desktop
-5. Animations are smooth
-6. Brand colors can be customized
-7. Assets can be uploaded (UI only, no backend)
+*Last Updated: March 18, 2026*
