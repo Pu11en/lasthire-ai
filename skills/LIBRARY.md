@@ -33,6 +33,9 @@ The Library is your command center for running automated tasks on Lasthire.ai. I
 - `batch-create` - Create multiple pins at once
 - `report-weekly` - Generate weekly performance reports
 
+### 🛠️ Vercel
+- `debug` - Check deployment status, logs, redeploy
+
 ## How To Use
 
 Tell me what you want to do and I'll use the appropriate skill:
